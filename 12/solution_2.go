@@ -10,18 +10,11 @@ import (
 // Rotate waypoint around ship by given amount
 func RotateWaypoint(x *int, y *int, amt int, direction byte) {
 	if amt == 180 {
-		*x = -*x
-		*y = -*y
+		*x, *y = -*x, -*y
 	} else if (direction == 'R' && amt == 90) || (direction == 'L' && amt == 270) { // x = y, y = -x
-		var temp int
-			temp = *y
-			*y = -*x
-			*x = temp
+		*x, *y = *y, -*x
 	} else { // x = -y, y = x
-		var temp int
-			temp = *y
-			*y = *x
-			*x = -temp
+		*x, *y = -*y, *x
 	}
 }
 
@@ -29,7 +22,7 @@ func Move(command string, wp_x *int, wp_y *int, ns *int, ew *int) {
 	instruction := command[0]
 	amount, _ := strconv.Atoi(command[1:])
 	switch instruction {
-	case 'R','L':
+	case 'R', 'L':
 		RotateWaypoint(wp_x, wp_y, amount, instruction)
 	case 'F':
 		*ns += *wp_y * amount
