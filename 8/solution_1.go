@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
-	"strings"
-	"strconv"
 	"bufio"
+	"fmt"
 	"os"
+	"strconv"
+	"strings"
 )
 
 func main() {
@@ -41,5 +41,5 @@ func main() {
 			insIdx += 1
 		}
 	}
-	fmt.Println(acc)
+	fmt.Println("Day 8 part 1:", (acc))
 }

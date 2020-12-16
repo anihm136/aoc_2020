@@ -33,5 +33,5 @@ func main() {
 	}
 	j3++
 
-	fmt.Println(j1, j3, j1*j3)
+	fmt.Println("Day 10 part 1:", j1*j3)
 }

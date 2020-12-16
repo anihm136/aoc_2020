@@ -43,5 +43,5 @@ func main() {
 		}
 	}
 	RecSearch("shiny gold")
-	fmt.Println(len(contains))
+	fmt.Println("Day 7 part 1:", len(contains))
 }

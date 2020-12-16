@@ -112,5 +112,5 @@ func main() {
 	if allFields {
 		valid += 1
 	}
-	fmt.Println(valid)
+	fmt.Println("Day 4 part 2:", valid)
 }

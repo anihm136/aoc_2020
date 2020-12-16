@@ -54,9 +54,12 @@ func main() {
 			}
 		}
 		idx += 1
+		if idx == 2020 {
+			fmt.Println("Day 15 part 1:", lastSpoken)
+		}
 		if idx == 30000000 {
+			fmt.Println("Day 15 part 2:", lastSpoken)
 			break
 		}
 	}
-	fmt.Println(lastSpoken)
 }

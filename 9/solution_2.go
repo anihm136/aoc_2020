@@ -52,6 +52,6 @@ func main() {
 			max = val
 		}
 	}
-	fmt.Println(min + max)
+	fmt.Println("Day 9 part 2:", (min + max))
 
 }

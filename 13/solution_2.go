@@ -63,5 +63,5 @@ func main() {
 	dep := strings.Split(s.Text(), ",")
 	depInt := ArrToMap(dep)
 
-	fmt.Println(ChineseRemainder(depInt))
+	fmt.Println("Day 13 part 2:", (ChineseRemainder(depInt)))
 }

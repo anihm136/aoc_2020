@@ -35,7 +35,7 @@ func main() {
 	sort.Ints(seats)
 	for idx, val := range seats {
 		if seats[idx+1] == val+2 {
-			fmt.Println(val + 1)
+			fmt.Println("Day 5 part 2:", (val + 1))
 			break
 		}
 	}

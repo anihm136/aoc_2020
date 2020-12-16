@@ -24,5 +24,5 @@ func main() {
 		}
 		// fmt.Printf("%d %d %c %s\n", min, max, char, password)
 	}
-	fmt.Println(validCount)
+	fmt.Println("Day 2 part 1:", validCount)
 }

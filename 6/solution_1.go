@@ -24,5 +24,5 @@ func main() {
 		}
 	}
 	sum += len(set)
-	fmt.Println(sum)
+	fmt.Println("Day 6 part 1:", (sum))
 }

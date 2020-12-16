@@ -28,10 +28,10 @@ func main() {
 				minCol += (maxCol - minCol) / 2
 			}
 		}
-		curSeat = minRow*8+minCol
+		curSeat = minRow*8 + minCol
 		if curSeat > maxSeat {
 			maxSeat = curSeat
 		}
 	}
-	fmt.Println(maxSeat)
+	fmt.Println("Day 5 part 1:", maxSeat)
 }

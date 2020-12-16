@@ -21,7 +21,7 @@ func FindOccupied(arr [][]byte, row int, col int) int {
 		if curRow < 0 || breakCondition() {
 			break
 		}
-		if incCondition(){
+		if incCondition() {
 			numOccupied += 1
 			break
 		}
@@ -166,5 +166,5 @@ func main() {
 			}
 		}
 	}
-	fmt.Println(numOccupied)
+	fmt.Println("Day 11 part 2:", (numOccupied))
 }

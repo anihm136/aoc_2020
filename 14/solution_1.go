@@ -54,5 +54,5 @@ func main() {
 	for _, val := range mem {
 		sum += val
 	}
-	fmt.Println(sum)
+	fmt.Println("Day 14 part 1:", sum)
 }

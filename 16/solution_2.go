@@ -138,7 +138,7 @@ func main() {
 	* Combine the data from all the tickets to get a mapping from keywords to
 	* valid indices If an index is valid for a keyword in all the tickets, then
 	* it is valid for the keywords
-	*/
+	 */
 	validIndices := make(map[string][]bool)
 	for k := range rules {
 		validIndices[k] = make([]bool, len(valid[0]))
@@ -192,5 +192,5 @@ func main() {
 			prod *= myticket[assignment[i]]
 		}
 	}
-	fmt.Println(prod)
+	fmt.Println("Day 16 part 2:", prod)
 }

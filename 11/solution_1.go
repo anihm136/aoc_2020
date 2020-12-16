@@ -77,5 +77,5 @@ func main() {
 			}
 		}
 	}
-	fmt.Println(numOccupied)
+	fmt.Println("Day 11 part 1:", numOccupied)
 }

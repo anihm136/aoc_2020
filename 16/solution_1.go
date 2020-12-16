@@ -77,5 +77,5 @@ func main() {
 		}
 	}
 
-	fmt.Println(err)
+	fmt.Println("Day 16 part 1:", err)
 }

@@ -19,7 +19,7 @@ func main() {
 	dep := strings.Split(s.Text(), ",") // All bus departure times
 
 	minDiff := earliest // Smallest wait time
-	choice := -1 // Index of bus with smallest wait time
+	choice := -1        // Index of bus with smallest wait time
 	for _, val := range dep {
 		if val != "x" {
 			curDep, _ := strconv.Atoi(val)
@@ -31,5 +31,5 @@ func main() {
 			}
 		}
 	}
-	fmt.Println(choice * minDiff)
+	fmt.Println("Day 13 part 1:", choice*minDiff)
 }

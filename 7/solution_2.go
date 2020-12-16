@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 	"regexp"
-	"strings"
 	"strconv"
+	"strings"
 )
 
 var contains map[string]map[string]int
@@ -34,7 +34,7 @@ func main() {
 	for s.Scan() {
 		a = strings.Split(s.Text(), " bags contain ")
 		b = strings.Split(a[1], ", ")
-		if _,ok := contains[a[0]]; !ok {
+		if _, ok := contains[a[0]]; !ok {
 			contains[a[0]] = make(map[string]int)
 		}
 		for _, val := range b {
@@ -47,5 +47,5 @@ func main() {
 			}
 		}
 	}
-	fmt.Println(RecSearch("shiny gold"))
+	fmt.Println("Day 7 part 2:", (RecSearch("shiny gold")))
 }

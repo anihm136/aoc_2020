@@ -34,5 +34,5 @@ func main() {
 			sum += 1
 		}
 	}
-	fmt.Println(sum)
+	fmt.Println("Day 6 part 2:", sum)
 }

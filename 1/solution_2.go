@@ -13,7 +13,7 @@ func main() {
 		fmt.Scanln(&temp)
 		for e := range set1 {
 			if _, ok := set2[e+temp]; ok {
-				fmt.Println(temp * e * (2020 - temp - e))
+				fmt.Println("Day 1 part 2:", temp*e*(2020-temp-e))
 				break
 			}
 		}

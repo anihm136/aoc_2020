@@ -56,5 +56,5 @@ func main() {
 		idx += 1
 	}
 
-	fmt.Println(firstWrong)
+	fmt.Println("Day 9 part 1:", firstWrong)
 }

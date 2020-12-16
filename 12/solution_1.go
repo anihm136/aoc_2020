@@ -10,7 +10,7 @@ import (
 func Move(command string, direction *rune, ns *int, ew *int) {
 	newDirection := command[0]
 	amount, _ := strconv.Atoi(command[1:])
-	directions := map[int]rune{0: 'N', 1: 'E', 2: 'S', 3: 'W'}    // Use these to find the new 
+	directions := map[int]rune{0: 'N', 1: 'E', 2: 'S', 3: 'W'}    // Use these to find the new
 	revDirections := map[rune]int{'N': 0, 'E': 1, 'S': 2, 'W': 3} // direction of the ship
 	switch newDirection {
 	case 'N':
@@ -66,5 +66,5 @@ func main() {
 		Move(s.Text(), &direction, &ns, &ew)
 	}
 
-	fmt.Println("Manhattan distance:", Abs(ns)+Abs(ew))
+	fmt.Println("Day 12 part 1:", Abs(ns)+Abs(ew))
 }

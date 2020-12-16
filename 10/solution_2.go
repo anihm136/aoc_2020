@@ -82,5 +82,5 @@ func main() {
 		}
 	}
 
-	fmt.Println(total)
+	fmt.Println("Day 10 part 2:", (total))
 }

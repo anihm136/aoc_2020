@@ -35,5 +35,5 @@ func main() {
 	for _, val := range trees {
 		ans *= val
 	}
-	fmt.Println(ans)
+	fmt.Println("Day 3 part 2:", ans)
 }

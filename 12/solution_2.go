@@ -59,5 +59,5 @@ func main() {
 		Move(s.Text(), &wp_x, &wp_y, &ns, &ew)
 	}
 
-	fmt.Println("Manhattan distance:", Abs(ns)+Abs(ew))
+	fmt.Println("Day 12 part 2:", Abs(ns)+Abs(ew))
 }

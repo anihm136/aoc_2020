@@ -13,7 +13,7 @@ var switchIdx int
 
 func FindLoop(insIdx int, hasRun []bool, didSwitch bool, acc int) bool {
 	if insIdx == len(lines) {
-		fmt.Println("Reached end! Accumulator is", acc)
+		fmt.Println("Day 8 part 2:", acc)
 		return true
 	}
 	if hasRun[insIdx] {
@@ -23,7 +23,7 @@ func FindLoop(insIdx int, hasRun []bool, didSwitch bool, acc int) bool {
 	hasRun[insIdx] = true
 	parts := strings.Split(lines[insIdx], " ")
 	amt, _ := strconv.Atoi(parts[1])
-	var b1,b2 bool
+	var b1, b2 bool
 
 	switch parts[0] {
 	case "acc":
@@ -44,7 +44,7 @@ func FindLoop(insIdx int, hasRun []bool, didSwitch bool, acc int) bool {
 		b1 = FindLoop(insIdx+incIdxOrig, hasRun, didSwitch, acc) // First try keeping instruction the same
 		if !b1 && !didSwitch {
 			b2 = FindLoop(insIdx+incIdxChange, hasRun, true, acc) // change instruction
-			if b2 { // This is the instruction to switch
+			if b2 {                                               // This is the instruction to switch
 				switchIdx = insIdx
 			} else { // Have taken wrong path, backtrack
 				hasRun[insIdx] = false
@@ -53,7 +53,7 @@ func FindLoop(insIdx int, hasRun []bool, didSwitch bool, acc int) bool {
 		}
 		return b1
 	}
-	fmt.Println("Something's wrong...")
+	fmt.Println("Day 8 part 2:", ("Something's wrong..."))
 	return false // should be unreachable
 }
 

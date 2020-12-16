@@ -24,5 +24,5 @@ func main() {
 		validCount += int(pos1Match ^ pos2Match)
 		// fmt.Printf("%c %c %c %d\n", password[pos1-1], password[pos2-1], char, pos1Match ^ pos2Match)
 	}
-	fmt.Println(validCount)
+	fmt.Println("Day 2 part 2:", validCount)
 }
